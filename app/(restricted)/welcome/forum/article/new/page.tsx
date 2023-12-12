@@ -108,13 +108,13 @@ const NewArticlePage = () => {
                 name="content"
                 control={control}
                 render={({ field: { onChange, onBlur } }) => (
-                    isClient ? (<ReactQuill
+                    {isClient ? (<ReactQuill
                         theme="snow"
                         modules={modules}
                         onChange={onChange}
                         onBlur={onBlur}
                         placeholder="Selamat berkarya...😁"
-                    />) : null
+                    />) : ""}
                 )}
             />
             {errors.content && <p role="alert">{errors.content.message}</p>}
