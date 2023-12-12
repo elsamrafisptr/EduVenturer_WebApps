@@ -50,7 +50,7 @@ const Page = ({ params }: { params: { slug: string } }) => {
                     <iframe
                         width="926.54"
                         height="480"
-                        src={virtualTours[parseInt(params.slug)-1].href}
+                        src={virtualTours[parseInt(params.slug) - 1].href}
                         title="YouTube video player"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

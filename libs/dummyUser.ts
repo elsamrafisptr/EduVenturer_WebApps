@@ -4,7 +4,7 @@ interface userData {
     email: string;
     password: string;
     user_capt: string;
-    user_image: string
+    user_image: string;
 }
 
 const user: userData[] = [
@@ -12,7 +12,7 @@ const user: userData[] = [
         id: 1,
         username: `example_user`,
         email: `example_user@example.com`,
-        password:  `thisIsStrongPw1!`,
+        password: `thisIsStrongPw1!`,
         user_capt: "",
         user_image: "",
     },
@@ -20,10 +20,10 @@ const user: userData[] = [
         id: 1,
         username: `example_user`,
         email: `example_user@example.com`,
-        password:  `thisIsStrongPw1!`,
+        password: `thisIsStrongPw1!`,
         user_capt: "",
         user_image: "",
     },
-]
+];
 
-export default user
+export default user;

@@ -16,7 +16,8 @@ const article: articleData[] = [
         id: 1,
         title: "Belajar Bahasa Inggris Sambil Bermain",
         image: "",
-        content: "Mengungkap kehidupan serangga yang menakjubkan di sekitar kita.",
+        content:
+            "Mengungkap kehidupan serangga yang menakjubkan di sekitar kita.",
         view: 0,
         author: user[1].username,
         //     id: 1,
@@ -33,7 +34,8 @@ const article: articleData[] = [
         id: 2,
         title: "Belajar Bahasa Inggris Sambil Bermain",
         image: "",
-        content: "Cara menyenangkan untuk belajar bahasa Inggris melalui permainan dan aktivitas.",
+        content:
+            "Cara menyenangkan untuk belajar bahasa Inggris melalui permainan dan aktivitas.",
         view: 0,
         author: user[1].username,
         createdAt: "12 Juni",
@@ -43,7 +45,8 @@ const article: articleData[] = [
         id: 3,
         title: "Rahasia Alam Semesta: Bintang dan Planet",
         image: "",
-        content: "Mengungkap misteri alam semesta dan keindahan bintang dan planet.",
+        content:
+            "Mengungkap misteri alam semesta dan keindahan bintang dan planet.",
         view: 0,
         author: user[1].username,
         createdAt: "20 September",
@@ -61,4 +64,4 @@ const article: articleData[] = [
     },
 ];
 
-export default article
+export default article;

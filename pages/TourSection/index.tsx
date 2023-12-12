@@ -2,8 +2,6 @@ import TourCard from "@/components/TourCard";
 import React from "react";
 import virtualTours from "@/libs/dummyTour";
 const TourSection = () => {
-    
-
     return (
         <>
             <div>
@@ -20,7 +18,6 @@ const TourSection = () => {
                         />
                     ))}
                 </div>
-                
             </div>
         </>
     );

@@ -16,7 +16,7 @@ const PricingSection = () => {
                     of a group eager to collaborate, we have the perfect plan
                     for you.
                 </p>
-                <TogglePricing/>
+                <TogglePricing />
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
                     <div className="divide-y divide-gray-200 bg-white rounded-lg border border-gray-200 shadow-sm hover:scale-105 duration-300 transition-all">
                         <div className="p-6 sm:px-8">
@@ -625,7 +625,7 @@ const PricingSection = () => {
                                     <span className="text-gray-700">
                                         {" "}
                                         Akses bersama untuk kelompok pengguna{" "}
-                                    </span>                
+                                    </span>
                                 </li>
                                 <li className="flex items-center gap-1">
                                     <svg
@@ -645,7 +645,8 @@ const PricingSection = () => {
 
                                     <span className="text-gray-700">
                                         {" "}
-                                        Manajemen terintegrasi dengan mudah dan baik{" "}
+                                        Manajemen terintegrasi dengan mudah dan
+                                        baik{" "}
                                     </span>
                                 </li>
                             </ul>

@@ -12,16 +12,13 @@ const WelcomeLayout = ({ children }: { children: React.ReactNode }) => {
                         #SemarakAkhirTahun!
                     </span>
                 </h1>
-                <AppNavbar/>
+                <AppNavbar />
                 <section className="min-h-screen grid md:gap-6 grid-cols-1 md:grid-cols-11 px-5 md:px-12">
-                    <div className="md:col-span-8">
-                        {children}
-                    </div>
+                    <div className="md:col-span-8">{children}</div>
                     <div className="md:col-span-3">
                         <ForumSection />
                     </div>
                 </section>
-
             </main>
         </>
     );

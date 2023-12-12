@@ -7,7 +7,7 @@ import virtualTours from "@/libs/dummyTour";
 const TourPage = () => {
     return (
         <>
-            <TourSection/>
+            <TourSection />
         </>
     );
 };

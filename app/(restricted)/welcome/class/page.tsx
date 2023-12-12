@@ -7,7 +7,7 @@ import React from "react";
 const ClassPage = () => {
     return (
         <>
-            <ClassSection/>
+            <ClassSection />
         </>
     );
 };

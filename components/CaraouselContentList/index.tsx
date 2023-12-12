@@ -63,10 +63,16 @@ const CarouselContentList = () => {
             sliderClass=""
             slidesToSlide={1}
             swipeable
-            
         >
-            {virtualTours.slice(0,5).map((input, index) => (
-                <TourCard key={index} id={input.id} image={input.image} description={input.description} title={input.title} tag={input.tag.category}/>
+            {virtualTours.slice(0, 5).map((input, index) => (
+                <TourCard
+                    key={index}
+                    id={input.id}
+                    image={input.image}
+                    description={input.description}
+                    title={input.title}
+                    tag={input.tag.category}
+                />
             ))}
         </Carousel>
     );

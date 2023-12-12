@@ -13,7 +13,10 @@ const WelcomePage = () => {
                 <p className="font-semibold text-gray-900 text-2xl">
                     Lanjutkan menjelajah tur lainnya?
                 </p>
-                <Link href={`/welcome/tour`} className="py-2.5 px-4 text-center font-medium bg-neutral-900 text-white rounded">
+                <Link
+                    href={`/welcome/tour`}
+                    className="py-2.5 px-4 text-center font-medium bg-neutral-900 text-white rounded"
+                >
                     Explore More
                 </Link>
             </div>
@@ -22,7 +25,10 @@ const WelcomePage = () => {
                 <p className="font-semibold text-gray-900 text-2xl">
                     Lanjutkan belajar kelas lainnya?
                 </p>
-                <Link href={`/welcome/class`} className="py-2.5 px-4 text-center font-medium bg-neutral-900 text-white rounded">
+                <Link
+                    href={`/welcome/class`}
+                    className="py-2.5 px-4 text-center font-medium bg-neutral-900 text-white rounded"
+                >
                     Explore More
                 </Link>
             </div>

@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 const page = ({ params }: { params: { slug: string } }) => {
-
     return (
         <>
             <section className="flex flex-col min-h-screen bg-white px-4 col-span-8 mx-auto pt-12 gap-4 py-12">
@@ -90,8 +89,7 @@ const page = ({ params }: { params: { slug: string } }) => {
                 <h1 className="mt-6 text-xl font-bold">
                     Rekomendasi Tour Lain Untuk Anda
                 </h1>
-                <div className="flex flex-wrap justify-between gap-6">
-                </div>
+                <div className="flex flex-wrap justify-between gap-6"></div>
             </section>
         </>
     );

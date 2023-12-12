@@ -43,8 +43,8 @@ const HidePasswordButton = (props: passwordProps) => {
             </div>
             {props.label == "Password"
                 ? props.error.password && (
-                    <p role="alert">{props.error.password.message}</p>
-                )
+                      <p role="alert">{props.error.password.message}</p>
+                  )
                 : ""}
         </div>
     );
