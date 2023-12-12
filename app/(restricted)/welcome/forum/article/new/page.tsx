@@ -1,14 +1,16 @@
 "use client"
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useForm, Controller, SubmitHandler } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import ReactQuill from "react-quill";
+import dynamic from "next/dynamic";
 
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
+
+const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
 
 const modules = {
     toolbar: [
@@ -35,6 +37,10 @@ const schema = yup
     })
     .required();
 const NewArticlePage = () => {
+    const [isClient, setIsClient] = useState(false);
+
+    useEffect(() => {setIsClient(true);}, []);
+    
     const {
         handleSubmit,
         control,
@@ -102,13 +108,13 @@ const NewArticlePage = () => {
                 name="content"
                 control={control}
                 render={({ field: { onChange, onBlur } }) => (
-                    <ReactQuill
+                    isClient ? (<ReactQuill
                         theme="snow"
                         modules={modules}
                         onChange={onChange}
                         onBlur={onBlur}
                         placeholder="Selamat berkarya...😁"
-                    />
+                    />) : null
                 )}
             />
             {errors.content && <p role="alert">{errors.content.message}</p>}
