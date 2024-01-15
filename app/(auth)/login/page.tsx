@@ -10,6 +10,7 @@ import HidePasswordButton from "@/components/HidePasswordButton";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import { signIn } from "next-auth/react";
+import { ArrowLeft } from "@phosphor-icons/react";
 YupPassword(yup);
 type FormData = {
     email: string;
@@ -77,13 +78,16 @@ const LoginPage = () => {
                             <div className="max-w-xl lg:max-w-3xl">
                                 <div className="relative -mt-16 block lg:hidden">
                                     <h1 className="mt-16 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
-                                        Welcome to New World!
+                                        🚀 Get Ready to Dive In! 🚀
                                     </h1>
 
                                     <p className="mt-4 leading-relaxed text-gray-500">
-                                        Lorem, ipsum dolor sit amet consectetur
-                                        adipisicing elit. Eligendi nam dolorum
-                                        aliquam, quibusdam aperiam voluptatum.
+                                        At EduVenturer, we believe in creating a
+                                        vibrant community where creativity knows
+                                        no bounds. Join us and be part of
+                                        something extraordinary. Your journey
+                                        starts here, and the possibilities are
+                                        endless!
                                     </p>
                                 </div>
 
@@ -92,6 +96,17 @@ const LoginPage = () => {
                                     className="mt-8 grid grid-cols-6 gap-6"
                                     onSubmit={handleSubmit(onSubmit)}
                                 >
+                                    <div className="w-full">
+                                        <button
+                                            onClick={() => router.back()}
+                                            className="flex flex-row gap-1 items-center justify-center"
+                                        >
+                                            <ArrowLeft size={20} className="" />
+                                            <p className="font-medium text-gray-900">
+                                                Kembali
+                                            </p>
+                                        </button>
+                                    </div>
                                     <div className="col-span-6">
                                         <label
                                             htmlFor="FirstName"
@@ -103,7 +118,7 @@ const LoginPage = () => {
                                         <input
                                             type="text"
                                             id="Email"
-                                            className="mt-1 w-full h-11 border rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+                                            className="px-4 mt-1 w-full h-11 border rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
                                             {...register("email")}
                                         />
                                         {errors.email && (
@@ -160,12 +175,12 @@ const LoginPage = () => {
                                             .
                                         </p>
                                     </div>
-                                    <div className="col-span-6 flex flex-row justify-center items-center">
+                                    {/* <div className="col-span-6 flex flex-row justify-center items-center">
                                         <hr className="" />
                                         <p>or</p>
                                         <hr className="" />
-                                    </div>
-                                    <div className="col-span-6 grid grid-cols-2 gap-4 mt-4">
+                                    </div> */}
+                                    {/* <div className="col-span-6 grid grid-cols-2 gap-4 mt-4">
                                         <Link
                                             href={"/"}
                                             className={`mt-1 h-11 flex justify-center items-center rounded border border-gray-200 bg-white text-sm text-gray-700 shadow-sm`}
@@ -179,7 +194,7 @@ const LoginPage = () => {
                                             Microsoft
                                         </Link>
                                         <Link href={"/"} className={``}></Link>
-                                    </div>
+                                    </div> */}
                                 </form>
                             </div>
                         </main>

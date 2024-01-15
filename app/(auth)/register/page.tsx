@@ -10,6 +10,7 @@ import HidePasswordButton from "@/components/HidePasswordButton";
 import { error } from "console";
 import axios from "axios";
 import { useRouter } from "next/navigation";
+import { ArrowLeft } from "@phosphor-icons/react";
 YupPassword(yup);
 type FormData = {
     username: string;
@@ -93,13 +94,18 @@ const RegisterPage = () => {
                             <div className="max-w-xl lg:max-w-3xl">
                                 <div className="relative -mt-16 block lg:hidden">
                                     <h1 className="mt-16 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
-                                        Welcome to New World!
+                                        🌟 Welcome to EduVenturer {"-"} Where
+                                        Your Journey Begins! 🌟
                                     </h1>
 
                                     <p className="mt-4 leading-relaxed text-gray-500">
-                                        Lorem, ipsum dolor sit amet consectetur
-                                        adipisicing elit. Eligendi nam dolorum
-                                        aliquam, quibusdam aperiam voluptatum.
+                                        Embark on an exciting adventure with
+                                        EduVenturer, your passport to a world of
+                                        possibilities. Whether you are here to
+                                        explore new horizons, connect with
+                                        like-minded individuals, or unlock
+                                        exclusive content, we are thrilled to
+                                        have you on board.
                                     </p>
                                 </div>
 
@@ -108,6 +114,17 @@ const RegisterPage = () => {
                                     className="mt-8 grid grid-cols-6 gap-6"
                                     onSubmit={handleSubmit(onSubmit)}
                                 >
+                                    <div className="w-full">
+                                        <button
+                                            onClick={() => router.back()}
+                                            className="flex flex-row gap-1 items-center justify-center"
+                                        >
+                                            <ArrowLeft size={20} className="" />
+                                            <p className="font-medium text-gray-900">
+                                                Back
+                                            </p>
+                                        </button>
+                                    </div>
                                     <div className="col-span-6">
                                         <label
                                             htmlFor="FirstName"
@@ -119,7 +136,7 @@ const RegisterPage = () => {
                                         <input
                                             type="text"
                                             id="username"
-                                            className="mt-1 w-full h-11 border rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+                                            className="px-4 mt-1 w-full h-11 border rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
                                             {...register("username")}
                                         />
                                         {errors.username && (
@@ -140,7 +157,7 @@ const RegisterPage = () => {
                                         <input
                                             type="email"
                                             id="Email"
-                                            className="mt-1 w-full h-11 border rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+                                            className="px-4 mt-1 w-full h-11 border rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
                                             {...register("email")}
                                         />
                                         {errors.email && (
@@ -213,12 +230,12 @@ const RegisterPage = () => {
                                             .
                                         </p>
                                     </div>
-                                    <div className="col-span-6 flex flex-row justify-center items-center">
+                                    {/* <div className="col-span-6 flex flex-row justify-center items-center">
                                         <hr className="" />
                                         <p>or</p>
                                         <hr className="" />
-                                    </div>
-                                    <div className="col-span-6 grid grid-cols-2 gap-4 mt-4">
+                                    </div> */}
+                                    {/* <div className="col-span-6 grid grid-cols-2 gap-4 mt-4">
                                         <Link
                                             href={"/"}
                                             className={`mt-1 h-11 flex justify-center items-center rounded border border-gray-200 bg-white text-sm text-gray-700 shadow-sm`}
@@ -232,7 +249,7 @@ const RegisterPage = () => {
                                             Microsoft
                                         </Link>
                                         <Link href={"/"} className={``}></Link>
-                                    </div>
+                                    </div> */}
                                 </form>
                             </div>
                         </main>

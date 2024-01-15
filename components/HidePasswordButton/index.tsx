@@ -30,7 +30,7 @@ const HidePasswordButton = (props: passwordProps) => {
                     onBlur={onBlur}
                     name={name}
                     ref={ref}
-                    className="mt-1 w-full h-11 border rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+                    className="px-4 mt-1 w-full h-11 border rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
                 />
                 <button
                     onClick={() => {

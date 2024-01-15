@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -30,8 +31,9 @@ const Footer = () => {
                                     </svg>
                                 </Link>
                             </div>
-                            <div className="flex justify-center font-bold text-blue-600 dark:text-tealSec sm:justify-start text-2xl">
-                                EduVenturer
+                            <div className="flex flex-row justify-center items-center sm:justify-start">
+                                <Image src={"/logo.svg"} width={48} height={48} alt="EduVenturer Logo"/>
+                                <h1 className="text-blue-600 dark:text-tealSec  text-2xl font-bold">EduVenturer</h1>
                             </div>
 
                             <p className="mt-6 max-w-md text-center leading-relaxed text-gray-600 dark:text-gray-300 sm:max-w-xs sm:text-left">

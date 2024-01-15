@@ -19,11 +19,6 @@ const HeroSection = () => {
                                 text="Get Started"
                                 primary={true}
                             />
-                            <Button
-                                href="/about-us"
-                                text="More About Us"
-                                primary={false}
-                            />
                         </div>
                     </div>
                     <div className="flex justify-end items-end">

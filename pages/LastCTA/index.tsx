@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const LastCTA = () => {
@@ -9,10 +10,10 @@ const LastCTA = () => {
                     <div>
                         <Image
                             className="object-cover w-16 h-16 rounded-full"
-                            src="https://placehold.co/400x400/png"
+                            src="/logo.svg"
                             alt=""
-                            height={10}
-                            width={10}
+                            height={48}
+                            width={48}
                         />
                         <blockquote>
                             <p className="mt-6 text-xl leading-relaxed text-gray-50 dark:text-gray-900">
@@ -28,7 +29,7 @@ const LastCTA = () => {
                             EduVenturer
                         </p>
                         <p className="mt-1 text-base text-gray-100 dark:text-gray-900">
-                            Platform Edukasi Interaktif Masa Depan
+                            Future Interactive Education Platform
                         </p>
                     </div>
 
@@ -43,23 +44,23 @@ const LastCTA = () => {
                                     Your Educational Odyssey Now!
                                 </p>
 
-                                <a
-                                    href="#"
+                                <Link
+                                    href="/register"
                                     title=""
                                     className="flex items-center justify-center w-full px-4 py-3 mt-8 text-base font-medium text-white transition-all duration-200 bg-blue-600 border-2 border-transparent rounded-md hover:bg-blue-700 focus:bg-blue-700"
                                     role="button"
                                 >
                                     Start Exploring
-                                </a>
+                                </Link>
 
-                                <a
+                                <Link
                                     href="#"
                                     title=""
-                                    className="flex items-center justify-center w-full px-4 py-3 mt-4 text-base font-medium text-black transition-all duration-200 bg-transparent rounded-md hover:bg-black focus:bg-black hover:text-white focus:text-white"
+                                    className="flex items-center justify-center w-full px-4 py-3 mt-4 text-base font-medium text-gray-900 transition-all duration-200 bg-transparent rounded-md hover:bg-gray-100 focus:bg-black hover:text-gray-50 focus:text-gray-50"
                                     role="button"
                                 >
                                     Talk to sales
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
